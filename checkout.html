@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - StrathCart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/7ea6b67ba4.js" crossorigin="anonymous"></script>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <section id="header">
+    <a href="index.html"><img src="imgsrc/logo.png" class="logo" alt="StrathCart Logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a class="active" href="checkout.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Page Header -->
+  <section id="page-header" class="section-m1">
+    <h2>Checkout</h2>
+    <p>Review your cart and confirm your order</p>
+  </section>
+
+  <!-- Order Summary -->
+  <section id="checkout" class="section-p1">
+    <h2>Order Summary</h2>
+    <div id="orderSummary" class="order-box"></div>
+  </section>
+
+  <!-- Checkout Form -->
+  <section id="checkout-form" class="section-p1">
+    <h3>Enter Your Details to Complete Checkout</h3>
+    <form id="checkoutForm">
+      <div class="form">
+        <input type="email" id="checkoutEmail" placeholder="Enter Your Email Address" required>
+      </div>
+      <div class="form">
+        <input type="tel" id="checkoutPhone" placeholder="Enter Your Phone Number" required />
+      </div>
+      <button type="submit" class="normal">Confirm Checkout</button>
+    </form>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="section-p1">
+    <div class="newstext">
+      <h4>Sign Up for Newsletters</h4>
+      <p>Get E-mail updates about our latest Products and <span>Special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Enter Your Email address" />
+      <button class="normal">Sign Up</button>
+    </div>
+    <div class="copyright">
+      <p>© 2025, StrathCart Ltd. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Your JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
